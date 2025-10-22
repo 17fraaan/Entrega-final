@@ -1,0 +1,319 @@
+@import "../utilidades/variables";
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* LOGO */
+.logo {
+  margin-top: 15px;
+  width: 120px;
+}
+
+/* HEADER - NAVBAR */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar {
+  transition: all 0.3s ease !important;
+  background-color: transparent !important;
+  display: block !important;
+}
+
+.navbar:hover {
+  background-color: #fff !important;
+}
+
+/* Enlaces dentro del navbar */
+.nav-link {
+  color: #fff !important;
+  padding: 0 5px;
+  font-size: 15px;
+  font-family: "DM Sans", sans-serif;
+}
+
+/* Cambiar color de los enlaces al hacer hover sobre el navbar */
+.navbar:hover .nav-link {
+  color: #000 !important;
+}
+
+/* Navbar blanca (por ejemplo, en la seccion Guia) */
+.navbar-guia {
+  background-color: #fff !important;
+}
+
+.navbar-guia .nav-link {
+  color: #000 !important;
+}
+
+/* Iconos cambio de color */
+.navbar:hover .bi {
+  color: #000 !important;
+}
+
+.navbar:hover .text-white {
+  color: #000 !important;
+}
+
+/* EFECTO DE ANIMACION */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Clases con animacion */
+.banner-fadeIn,
+.imagen-guia-talles-fadeIn {
+  opacity: 1;
+  animation: fadeIn 1s ease-in forwards;
+}
+
+/* SECCIONES */
+.banner-fadeIn {
+  width: 100%;
+  height: 100vh;
+  background: url("../assets/pagg.jpg");
+  background-size: cover;
+  background-position: top;
+}
+
+.accesorios-imagen{
+  background: url("../assets/fondo-accesorios.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  h1{
+    text-shadow: 2px 1px 17px #d3d3d3;
+    line-height: 100vh;
+    color: #fff;
+    font-size: 60px;
+    font-family: $font-primary;
+    font-weight: bold;
+    text-align: center;
+  }
+}
+
+/* GUIA DE TALLES */
+.imagen-guia-talles-fadeIn {
+  width: 90%;
+  margin: 90px auto;
+  display: block;
+}
+
+.guia {
+  text-align: center;
+  margin-top: 130px;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+/* CONTACTO */
+.navbar-contacto .nav-link {
+  color: #000 !important;
+  display: block;
+}
+
+.formulario-contacto {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  .input-contacto,
+  .textarea-contacto {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-family: "DM Sans", sans-serif;
+  }
+
+  .input-contacto:focus {
+    outline: none;
+    border-color: #0d6efd;
+    box-shadow: 0 0 5px #08439d;
+  }
+
+  .textarea-contacto:focus {
+    outline: none;
+    border-color: #0d6efd;
+    box-shadow: 0 0 5px #08439d;
+  }
+}
+
+/* PRODUCTOS */
+.h1-colection {
+  padding: 25px;
+  text-align: center;
+  margin-top: 20px;
+  font-family: $font-primary;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.contenedor-productos {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 20px 10px 20px 0px;
+
+  .remeras {
+    margin-top: 60px;
+  }
+
+  .campera-pantalon {
+    margin-top: 60px;
+  }
+
+  .cont-img {
+    overflow: hidden;
+
+    img {
+      width: 600px;
+      background-color: #f3f3f3;
+      padding: 15px;
+      transition: all 0.3s ease;
+      margin-bottom: 13px;
+      cursor: pointer;
+    }
+
+    img:hover {
+      transform: scale(1.02);
+    }
+  }
+
+  .product {
+    text-align: left;
+  }
+
+  h2 {
+    font-family: $font-primary;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: flex-start;
+  }
+
+  h3 {
+    font-family: $font-primary;
+    font-size: 15px;
+    text-align: flex-start;
+    font-weight: 500;
+  }
+
+  .boton-comprar {
+    margin: 5px auto;
+    padding: 6px 13px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 10px;
+    font-family: $font-primary;
+    transition: background-color 0.3s ease;
+  }
+
+  .boton-comprar:hover {
+    background-color: #353535;
+  }
+}
+
+/* BOTON SIN STOCK */
+.boton-comprar-nostock {
+  margin: 5px auto;
+  padding: 6px 13px;
+  background-color: #5f5f5f;
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  cursor: not-allowed;
+  font-size: 10px;
+  font-family: $font-primary;
+}
+
+
+/* CONTACTO - SECCION */
+.contenedor-contacto {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 20px 20px 20px 0px;
+}
+
+.inicio-contacto {
+  padding: 10px;
+  background-color: #f3f3f3;
+  text-align: center;
+  font-family: "DM Sans", sans-serif;
+  margin-top: 130px;
+}
+
+/* FOOTER */
+footer {
+  margin-top: 50px;
+
+  .contenedor-footer {
+    color: #000000cc;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+
+    h4 {
+      color: #000000cc;
+      font-family: $font-primary, "DM Sans", sans-serif;
+      font-weight: bold;
+    }
+
+    a {
+      color: #000000cc;
+      font-family: $font-primary;
+      font-size: 14px;
+      text-decoration: none;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    .items {
+      margin-bottom: 12px;
+    }
+
+    .social-icons {
+      margin-top: 10px;
+
+      i {
+        font-size: 24px;
+        margin: 0 10px;
+        cursor: pointer;
+        transition: color 0.3s ease;
+      }
+
+      i:hover {
+        color: #bbbbbb;
+      }
+    }
+  }
+}
+
+/* DERECHOS RESERVADOS */
+.derechos-reservados {
+  text-align: center;
+  padding: 6px;
+  background-color: #fff;
+  color: #000000cc;
+  font-family: $font-primary;
+  font-size: 17px;
+}
