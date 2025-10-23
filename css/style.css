@@ -305,17 +305,20 @@ footer .contenedor-footer .social-icons i:hover {
 }
 
 @media (max-width: 450px) {
-  .contenedor-productos .remeras {
-    margin-top: 60px;
-  }
-  .contenedor-productos .remeras1 {
-    margin-top: 60px;
+  header {
+    width: 100%;
   }
   .contenedor-productos {
     margin-right: 0;
+    justify-content: center;
+  }
+  .contenedor-productos .remeras,
+  .contenedor-productos .remeras1 {
+    margin-top: 60px;
   }
   .contenedor-productos .cont-img img {
-    width: 330px;
+    width: 100%;
+    max-width: 330px;
   }
   .contenedor-contacto {
     margin-top: 20px;

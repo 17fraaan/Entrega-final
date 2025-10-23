@@ -324,28 +324,33 @@ footer {
 
 // MEDIA QUERIES
 @media (max-width: 450px) {
-  body{
-    overflow: hidden;
+  header {
+    width: 100%;
   }
+
   .contenedor-productos {
-    .remeras {
-      margin-top: 60px;
-    }
+    margin-right: 0;
+    justify-content: center;
+
+    .remeras,
     .remeras1 {
       margin-top: 60px;
     }
-    margin-right: 0;
+
     .cont-img img {
-      width: 330px;
+      width: 100%;
+      max-width: 330px;
     }
   }
-  .contenedor-contacto{
+
+  .contenedor-contacto {
     margin-top: 20px;
-    .mapa-de-pagina{
+    .mapa-de-pagina {
       display: none;
     }
   }
-  .formulario-contacto{
+
+  .formulario-contacto {
     margin-top: 40px;
   }
 }
