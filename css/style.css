@@ -167,9 +167,9 @@ header {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  margin: 20px 10px 20px 0px;
+  margin: 20px 0px 20px 0px;
 }
-.contenedor-productos .remeras {
+.contenedor-productos .remeras1 {
   margin-top: 60px;
 }
 .contenedor-productos .campera-pantalon {
@@ -238,6 +238,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  flex-wrap: wrap;
   margin: 20px 20px 20px 0px;
 }
 
@@ -297,6 +298,34 @@ footer .contenedor-footer .social-icons i:hover {
   color: rgba(0, 0, 0, 0.8);
   font-family: "lemon", sans-serif;
   font-size: 17px;
+}
+
+.contenedor-productos .glasses {
+  margin-top: 60px;
+}
+
+@media (max-width: 450px) {
+  .contenedor-productos .remeras {
+    margin-top: 60px;
+  }
+  .contenedor-productos .remeras1 {
+    margin-top: 60px;
+  }
+  .contenedor-productos {
+    margin-right: 0;
+  }
+  .contenedor-productos .cont-img img {
+    width: 330px;
+  }
+  .contenedor-contacto {
+    margin-top: 20px;
+  }
+  .contenedor-contacto .mapa-de-pagina {
+    display: none;
+  }
+  .formulario-contacto {
+    margin-top: 40px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

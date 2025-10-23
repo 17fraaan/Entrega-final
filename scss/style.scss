@@ -88,13 +88,13 @@ header {
   background-position: top;
 }
 
-.accesorios-imagen{
+.accesorios-imagen {
   background: url("../assets/fondo-accesorios.jpg");
   background-size: cover;
   background-position: center;
   width: 100%;
   height: 100vh;
-  h1{
+  h1 {
     text-shadow: 2px 1px 17px #d3d3d3;
     line-height: 100vh;
     color: #fff;
@@ -167,9 +167,9 @@ header {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  margin: 20px 10px 20px 0px;
+  margin: 20px 0px 20px 0px;
 
-  .remeras {
+  .remeras1 {
     margin-top: 60px;
   }
 
@@ -243,12 +243,12 @@ header {
   font-family: $font-primary;
 }
 
-
 /* CONTACTO - SECCION */
 .contenedor-contacto {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  flex-wrap: wrap;
   margin: 20px 20px 20px 0px;
 }
 
@@ -316,4 +316,33 @@ footer {
   color: #000000cc;
   font-family: $font-primary;
   font-size: 17px;
+}
+
+.contenedor-productos .glasses {
+  margin-top: 60px;
+}
+
+// MEDIA QUERIES
+@media (max-width: 450px) {
+  .contenedor-productos {
+    .remeras {
+      margin-top: 60px;
+    }
+    .remeras1 {
+      margin-top: 60px;
+    }
+    margin-right: 0;
+    .cont-img img {
+      width: 330px;
+    }
+  }
+  .contenedor-contacto{
+    margin-top: 20px;
+    .mapa-de-pagina{
+      display: none;
+    }
+  }
+  .formulario-contacto{
+    margin-top: 40px;
+  }
 }
