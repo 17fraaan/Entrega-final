@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "lemon";
   src: url("../Fonts/lemon_milk/LEMONMILK-Regular.otf") format("truetype");
@@ -307,6 +308,23 @@ footer .contenedor-footer .social-icons i:hover {
 @media (max-width: 450px) {
   header {
     width: 100%;
+  }
+  /* 🧱 Ajuste general */
+  html, body {
+    overflow-x: hidden;
+    width: 100%;
+  }
+  /* 🖼️ Banner principal */
+  .banner-fadeIn,
+  .accesorios-imagen {
+    height: 45vh; /* altura reducida para móvil */
+    background-size: cover;
+    background-position: center; /* centra mejor en pantallas chicas */
+  }
+  .accesorios-imagen h1 {
+    font-size: 35px; /* más chico en celular */
+    line-height: 45vh;
+    padding: 0 15px; /* margen interno lateral */
   }
   .contenedor-productos {
     margin-right: 0;
