@@ -1,0 +1,47 @@
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar {
+  transition: all 0.3s ease !important;
+  background-color: transparent !important;
+  display: block !important;
+}
+
+.navbar:hover {
+  background-color: #fff !important;
+}
+
+/* Enlaces dentro del navbar */
+.nav-link {
+  color: #fff !important;
+  padding: 0 5px;
+  font-size: 15px;
+  font-family: "DM Sans", sans-serif;
+}
+
+/* Cambiar color de los enlaces al hacer hover sobre el navbar */
+.navbar:hover .nav-link {
+  color: #000 !important;
+}
+
+/* Navbar blanca (por ejemplo, en la seccion Guia) */
+.navbar-guia {
+  background-color: #fff !important;
+}
+
+.navbar-guia .nav-link {
+  color: #000 !important;
+}
+
+/* Iconos cambio de color */
+.navbar:hover .bi {
+  color: #000 !important;
+}
+
+.navbar:hover .text-white {
+  color: #000 !important;
+}

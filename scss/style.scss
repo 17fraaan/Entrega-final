@@ -1,4 +1,7 @@
 @import "../utilidades/variables";
+@import "../utilidades/footer";
+@import "../utilidades/contacto";
+@import "../utilidades/header-navbar";
 
 /* RESET */
 * {
@@ -11,55 +14,6 @@
 .logo {
   margin-top: 15px;
   width: 120px;
-}
-
-/* HEADER - NAVBAR */
-header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-}
-
-.navbar {
-  transition: all 0.3s ease !important;
-  background-color: transparent !important;
-  display: block !important;
-}
-
-.navbar:hover {
-  background-color: #fff !important;
-}
-
-/* Enlaces dentro del navbar */
-.nav-link {
-  color: #fff !important;
-  padding: 0 5px;
-  font-size: 15px;
-  font-family: "DM Sans", sans-serif;
-}
-
-/* Cambiar color de los enlaces al hacer hover sobre el navbar */
-.navbar:hover .nav-link {
-  color: #000 !important;
-}
-
-/* Navbar blanca (por ejemplo, en la seccion Guia) */
-.navbar-guia {
-  background-color: #fff !important;
-}
-
-.navbar-guia .nav-link {
-  color: #000 !important;
-}
-
-/* Iconos cambio de color */
-.navbar:hover .bi {
-  color: #000 !important;
-}
-
-.navbar:hover .text-white {
-  color: #000 !important;
 }
 
 /* EFECTO DE ANIMACION */
@@ -119,39 +73,7 @@ header {
   font-weight: bold;
 }
 
-/* CONTACTO */
-.navbar-contacto .nav-link {
-  color: #000 !important;
-  display: block;
-}
 
-.formulario-contacto {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-
-  .input-contacto,
-  .textarea-contacto {
-    padding: 8px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    font-family: "DM Sans", sans-serif;
-  }
-
-  .input-contacto:focus {
-    outline: none;
-    border-color: #0d6efd;
-    box-shadow: 0 0 5px #08439d;
-  }
-
-  .textarea-contacto:focus {
-    outline: none;
-    border-color: #0d6efd;
-    box-shadow: 0 0 5px #08439d;
-  }
-}
 
 /* PRODUCTOS */
 .h1-colection {
@@ -187,10 +109,9 @@ header {
       transition: all 0.3s ease;
       margin-bottom: 13px;
       cursor: pointer;
-    }
-
-    img:hover {
-      transform: scale(1.02);
+        &:hover {
+          transform: scale(1.02);
+        }
     }
   }
 
@@ -206,9 +127,7 @@ header {
   }
 
   h3 {
-    font-family: $font-primary;
-    font-size: 15px;
-    text-align: flex-start;
+    @extend h2;
     font-weight: 500;
   }
 
@@ -223,10 +142,9 @@ header {
     font-size: 10px;
     font-family: $font-primary;
     transition: background-color 0.3s ease;
-  }
-
-  .boton-comprar:hover {
-    background-color: #353535;
+      &:hover {
+        background-color: #353535;
+      }
   }
 }
 
@@ -243,105 +161,33 @@ header {
   font-family: $font-primary;
 }
 
-/* CONTACTO - SECCION */
-.contenedor-contacto {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  margin: 20px 20px 20px 0px;
-}
 
-.inicio-contacto {
-  padding: 10px;
-  background-color: #f3f3f3;
-  text-align: center;
-  font-family: "DM Sans", sans-serif;
-  margin-top: 130px;
-}
 
-/* FOOTER */
-footer {
-  margin-top: 50px;
-
-  .contenedor-footer {
-    color: #000000cc;
-    display: flex;
-    justify-content: space-around;
-    padding: 20px;
-
-    h4 {
-      color: #000000cc;
-      font-family: $font-primary, "DM Sans", sans-serif;
-      font-weight: bold;
-    }
-
-    a {
-      color: #000000cc;
-      font-family: $font-primary;
-      font-size: 14px;
-      text-decoration: none;
-    }
-
-    ul {
-      list-style: none;
-    }
-
-    .items {
-      margin-bottom: 12px;
-    }
-
-    .social-icons {
-      margin-top: 10px;
-
-      i {
-        font-size: 24px;
-        margin: 0 10px;
-        cursor: pointer;
-        transition: color 0.3s ease;
-      }
-
-      i:hover {
-        color: #bbbbbb;
-      }
-    }
-  }
-}
-
-/* DERECHOS RESERVADOS */
-.derechos-reservados {
-  text-align: center;
-  padding: 6px;
-  background-color: #fff;
-  color: #000000cc;
-  font-family: $font-primary;
-  font-size: 17px;
-}
 
 .contenedor-productos .glasses {
   margin-top: 60px;
 }
 
-// MEDIA QUERIES
 @media (max-width: 450px) {
   header {
     width: 100%;
   }
 
-  html, body {
+  html,
+  body {
     overflow-x: hidden;
     width: 100%;
   }
 
   .banner-fadeIn,
   .accesorios-imagen {
-    height: 45vh; 
+    height: 45vh;
     background-size: cover;
-    background-position: center; 
+    background-position: center;
   }
 
   .accesorios-imagen h1 {
-    font-size: 35px; 
+    font-size: 35px;
     line-height: 45vh;
     padding: 0 15px;
   }

@@ -1,0 +1,52 @@
+/* Barra de navegación (solo para página de contacto) */
+.navbar-contacto {
+  .nav-link {
+    color: #000 !important;
+    display: block;
+  }
+}
+
+/* Bloque superior "Inicio · Contacto" */
+.inicio-contacto {
+  padding: 10px;
+  background-color: #f3f3f3;
+  text-align: center;
+  font-family: "DM Sans", sans-serif;
+  margin-top: 130px;
+}
+
+/* Contenedor general del contenido de contacto */
+.contenedor-contacto {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 20px 20px 20px 0;
+}
+
+/* Formulario de contacto */
+.formulario-contacto {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  /* Inputs y textarea */
+  .input-contacto,
+  .textarea-contacto {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-family: "DM Sans", sans-serif;
+    transition: all 0.2s ease;
+  }
+
+  /* Efecto al enfocar */
+  .input-contacto:focus,
+  .textarea-contacto:focus {
+    outline: none;
+    border-color: #0d6efd;
+    box-shadow: 0 0 5px #08439d;
+  }
+}

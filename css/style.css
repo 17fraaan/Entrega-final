@@ -1,24 +1,103 @@
-@charset "UTF-8";
 @font-face {
   font-family: "lemon";
   src: url("../Fonts/lemon_milk/LEMONMILK-Regular.otf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
-/* RESET */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+footer {
+  margin-top: 50px;
+}
+footer .contenedor-footer {
+  color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+footer .contenedor-footer h4 {
+  color: rgba(0, 0, 0, 0.8);
+  font-family: "lemon", sans-serif, "DM Sans", sans-serif;
+  font-weight: bold;
+}
+footer .contenedor-footer a {
+  color: rgba(0, 0, 0, 0.8);
+  font-family: "lemon", sans-serif;
+  font-size: 14px;
+  text-decoration: none;
+}
+footer .contenedor-footer ul {
+  list-style: none;
+}
+footer .contenedor-footer .items {
+  margin-bottom: 12px;
+}
+footer .contenedor-footer .social-icons {
+  margin-top: 10px;
+}
+footer .contenedor-footer .social-icons i {
+  font-size: 24px;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+footer .contenedor-footer .social-icons i:hover {
+  color: #bbbbbb;
 }
 
-/* LOGO */
-.logo {
-  margin-top: 15px;
-  width: 120px;
+.derechos-reservados {
+  text-align: center;
+  padding: 6px;
+  background-color: #fff;
+  color: rgba(0, 0, 0, 0.8);
+  font-family: "lemon", sans-serif;
+  font-size: 17px;
 }
 
-/* HEADER - NAVBAR */
+.inicio-contacto {
+  padding: 10px;
+  background-color: #f3f3f3;
+  text-align: center;
+  font-family: "DM Sans", sans-serif;
+  margin-top: 130px;
+}
+
+.navbar-contacto .nav-link {
+  color: #000 !important;
+  display: block;
+}
+
+.formulario-contacto {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.formulario-contacto .input-contacto,
+.formulario-contacto .textarea-contacto {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-family: "DM Sans", sans-serif;
+}
+.formulario-contacto .input-contacto:focus {
+  outline: none;
+  border-color: #0d6efd;
+  box-shadow: 0 0 5px #08439d;
+}
+.formulario-contacto .textarea-contacto:focus {
+  outline: none;
+  border-color: #0d6efd;
+  box-shadow: 0 0 5px #08439d;
+}
+
+.contenedor-contacto {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 20px 20px 20px 0px;
+}
+
 header {
   position: fixed;
   top: 0;
@@ -65,6 +144,19 @@ header {
 
 .navbar:hover .text-white {
   color: #000 !important;
+}
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* LOGO */
+.logo {
+  margin-top: 15px;
+  width: 120px;
 }
 
 /* EFECTO DE ANIMACION */
@@ -123,37 +215,6 @@ header {
   font-weight: bold;
 }
 
-/* CONTACTO */
-.navbar-contacto .nav-link {
-  color: #000 !important;
-  display: block;
-}
-
-.formulario-contacto {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-.formulario-contacto .input-contacto,
-.formulario-contacto .textarea-contacto {
-  padding: 8px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  font-family: "DM Sans", sans-serif;
-}
-.formulario-contacto .input-contacto:focus {
-  outline: none;
-  border-color: #0d6efd;
-  box-shadow: 0 0 5px #08439d;
-}
-.formulario-contacto .textarea-contacto:focus {
-  outline: none;
-  border-color: #0d6efd;
-  box-shadow: 0 0 5px #08439d;
-}
-
 /* PRODUCTOS */
 .h1-colection {
   padding: 25px;
@@ -193,16 +254,13 @@ header {
 .contenedor-productos .product {
   text-align: left;
 }
-.contenedor-productos h2 {
+.contenedor-productos h2, .contenedor-productos h3 {
   font-family: "lemon", sans-serif;
   font-size: 15px;
   font-weight: bold;
   text-align: flex-start;
 }
 .contenedor-productos h3 {
-  font-family: "lemon", sans-serif;
-  font-size: 15px;
-  text-align: flex-start;
   font-weight: 500;
 }
 .contenedor-productos .boton-comprar {
@@ -234,73 +292,6 @@ header {
   font-family: "lemon", sans-serif;
 }
 
-/* CONTACTO - SECCION */
-.contenedor-contacto {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  margin: 20px 20px 20px 0px;
-}
-
-.inicio-contacto {
-  padding: 10px;
-  background-color: #f3f3f3;
-  text-align: center;
-  font-family: "DM Sans", sans-serif;
-  margin-top: 130px;
-}
-
-/* FOOTER */
-footer {
-  margin-top: 50px;
-}
-footer .contenedor-footer {
-  color: rgba(0, 0, 0, 0.8);
-  display: flex;
-  justify-content: space-around;
-  padding: 20px;
-}
-footer .contenedor-footer h4 {
-  color: rgba(0, 0, 0, 0.8);
-  font-family: "lemon", sans-serif, "DM Sans", sans-serif;
-  font-weight: bold;
-}
-footer .contenedor-footer a {
-  color: rgba(0, 0, 0, 0.8);
-  font-family: "lemon", sans-serif;
-  font-size: 14px;
-  text-decoration: none;
-}
-footer .contenedor-footer ul {
-  list-style: none;
-}
-footer .contenedor-footer .items {
-  margin-bottom: 12px;
-}
-footer .contenedor-footer .social-icons {
-  margin-top: 10px;
-}
-footer .contenedor-footer .social-icons i {
-  font-size: 24px;
-  margin: 0 10px;
-  cursor: pointer;
-  transition: color 0.3s ease;
-}
-footer .contenedor-footer .social-icons i:hover {
-  color: #bbbbbb;
-}
-
-/* DERECHOS RESERVADOS */
-.derechos-reservados {
-  text-align: center;
-  padding: 6px;
-  background-color: #fff;
-  color: rgba(0, 0, 0, 0.8);
-  font-family: "lemon", sans-serif;
-  font-size: 17px;
-}
-
 .contenedor-productos .glasses {
   margin-top: 60px;
 }
@@ -309,22 +300,21 @@ footer .contenedor-footer .social-icons i:hover {
   header {
     width: 100%;
   }
-  /* 🧱 Ajuste general */
-  html, body {
+  html,
+  body {
     overflow-x: hidden;
     width: 100%;
   }
-  /* 🖼️ Banner principal */
   .banner-fadeIn,
   .accesorios-imagen {
-    height: 45vh; /* altura reducida para móvil */
+    height: 45vh;
     background-size: cover;
-    background-position: center; /* centra mejor en pantallas chicas */
+    background-position: center;
   }
   .accesorios-imagen h1 {
-    font-size: 35px; /* más chico en celular */
+    font-size: 35px;
     line-height: 45vh;
-    padding: 0 15px; /* margen interno lateral */
+    padding: 0 15px;
   }
   .contenedor-productos {
     margin-right: 0;
