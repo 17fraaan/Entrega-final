@@ -324,6 +324,9 @@ footer {
 
 // MEDIA QUERIES
 @media (max-width: 450px) {
+  body{
+    overflow: hidden;
+  }
   .contenedor-productos {
     .remeras {
       margin-top: 60px;
